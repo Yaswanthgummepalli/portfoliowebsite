@@ -1,0 +1,123 @@
+.sec-3{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:100vh;
+    padding-top: 0px;
+    gap:80px;
+    margin-top:100px;
+}
+.sec-3-1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+  
+
+}
+.sec-3-1 span{
+    margin-top: 30px;
+}
+.sec-3-1 h1{
+    margin:10px 10px;
+    color:darkorange;
+    
+}
+.sec-3-2{
+    display:flex;
+    gap:20px;
+    
+}
+.box-2{
+    border:2px solid black;
+    width:350px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 6px;
+    border-radius: 20px;
+   
+
+}
+.box-2-1{
+    font-size: 25px;
+   font-weight: 600;
+   padding-bottom: 10px;
+}
+.skills{
+    display:grid;
+    grid-template-columns:auto auto;
+    gap:40px;
+}
+.skills-1 img{
+    width:30px;
+}
+
+.skills-1{
+    display:flex;
+    align-items: start;
+    gap:5px;
+    
+}
+.skills-1-1{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+}
+.skills-1-1 :nth-child(1)
+{
+    font-size:17px;
+    font-weight: 700;
+}
+.skills-1-1 :nth-child(2){
+    font-size:15px;
+}
+@media(max-width:1024px)
+{
+     .sec-3{
+     margin-top:50px; /* Reduced large margin */
+     height:auto; /* Allow content to dictate height */
+     min-height:50vh; /* Ensure minimum height */
+   
+   
+    }
+}
+@media(max-width:767px)
+{
+    .sec-3{
+     margin-top:30px; /* Reduced large margin */
+   
+   
+    }
+    .sec-3-2{
+        display:flex;
+        flex-direction:column;
+        align-items: center; /* Center the stacked boxes */
+
+    }
+    
+    /* Added margin-bottom to separate stacked boxes */
+   
+   
+    .box-2{
+    width:90%; /* Made width flexible */
+    max-width:300px; /* Added max-width */
+    margin: 0 auto 20px auto; /* Centered box and added bottom margin */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px 6px;
+    border-radius: 20px;
+    }
+    .box-2-1{
+        font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    }
+
+    
+
+
+    
+
+}

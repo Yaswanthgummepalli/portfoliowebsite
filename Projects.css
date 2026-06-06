@@ -1,0 +1,133 @@
+.sec-4
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:100vh;
+    gap:60px;
+    margin-top:100px;
+}
+.sec-4-1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec-4-1 :nth-child(1)
+{
+    font-weight: 600;
+    margin-top: 30px;
+}
+.sec-4-1 :nth-child(2){
+    font-size:50px;
+    margin:10px;
+    color:darkorange;
+}
+.sec-4-2{
+    display:flex;
+    gap:30px;
+
+}
+.box-4{
+    padding:17px;
+    border:2px solid black;
+    border-radius: 20px;
+    width:320px;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-4 img{
+    width:300px;
+    border-radius: 20px;
+
+}
+.btns{
+    display:flex;
+    align-items: center;
+    gap:25px;
+
+}
+.btns button{
+    padding:5px 20px;
+    border-radius: 40px;
+    border:2px solid black;
+    background-color: antiquewhite;
+}
+.btns button:hover{
+   cursor: pointer;
+   color:white;
+   background-color: black;
+}
+
+@media(max-width:1024px)
+{
+   
+    .sec-4-1 :nth-child(1)
+    {
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .sec-4-1 :nth-child(2){ /* Heading for Projects section */
+        font-size:50px; /* Reduced font size for tablets */
+        margin:10px;
+        color:darkorange;
+    }
+    .sec-4-2{
+    display:flex;
+    flex-direction: column;
+    align-items: center; /* Center the stacked project boxes */
+    width: 100%; /* Ensure it takes full width */
+   
+
+
+    }
+    .box-4{
+   
+    width:90%; /* Made width flexible */
+    max-width:490px; /* Added max-width */
+    margin: 0 auto; /* Centered box */
+   
+    }
+    .box-4 img{
+    width:100%; /* Made image scale within its container */
+    max-width:450px; /* Added max-width */
+    border-radius: 20px;
+    }   
+}
+
+@media(max-width:767px)
+{
+    .sec-4{
+        margin-top:50px; /* Reduced large margin */
+    }
+    .sec-4-1 :nth-child(1)
+    {
+        font-weight: 600;
+        font-size: 17px;
+    }
+    .sec-4-1 :nth-child(2){
+        font-size:35px; /* Reduced font size for mobile */
+        margin:10px;
+        color:darkorange;
+    }
+    .sec-4-2{
+    display:flex;
+    flex-direction: column;
+    align-items: center; /* Center the stacked project boxes */
+    width: 100%; /* Ensure it takes full width */
+   
+
+
+    }
+    .box-4{
+    width:90%; /* Made width flexible */
+    max-width:300px; /* Added max-width */
+    margin: 0 auto; /* Centered box */
+    }
+    .box-4 img{
+    width:100%; /* Made image scale within its container */
+    max-width:280px; /* Added max-width */
+    height: auto; /* Ensure image height adjusts proportionally */    border-radius: 20px;
+    }   
+}
